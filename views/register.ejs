@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="css/login.css">
+    <title>Book_Space | Signup</title>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <!-- <input type="checkbox" id="flip"> -->
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+              <img src="Image/Logo2.png" alt="">
+            <!-- <div class="title">Login</div> -->
+          
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="/signup" method="POST">
+            <div class="input-boxes">
+              <!-- <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter your name" required name="uname">
+              </div> -->
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" required name="username">
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required name="password">
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit">
+              </div>
+              <div class="btn2">
+                <div class="col-sm-4">
+     <div class="card">
+       <div class="card-body">
+         <a class="btn btn-block" href="/auth/google" role="button">
+           <i class="fab fa-google"></i>
+           Sign In with Google
+         </a>
+       </div>
+     </div>
+   </div>
+             </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip"><a href="login"> Login now </a></label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

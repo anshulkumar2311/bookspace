@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book_Space | Book Donate</title>
+    <link rel="stylesheet" href="css/BS_Bookdonate.css">
+    <link rel="stylesheet" href="css/BS_about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="Nav.css"> -->
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .book1{
+             display: flex;
+             height: 85%;
+             margin: 5%;
+             background-color: beige;
+             padding-top: 0.1px;
+        }
+        .book2{
+            margin-top: 4%;
+            margin-left: 5%;
+            margin-bottom:4%;
+            margin-right: 5%;
+            width: 90%;
+            background-color: tomato;
+            text-align: center;
+        }
+        @media only screen and (max-width: 800px){
+            .book1{
+                height: 65%;
+            }
+        
+        }
+        #head1, #head3 , #head03{
+            text-align: center;
+            padding: 2%;
+            padding-bottom: 0;
+            color: azure;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+             
+        }
+
+        #head2 {
+             padding: 2%;
+             padding-top: 0px;
+             font-size: 20px;
+        }
+        
+        .button {
+  background-color: teal; /* Green */
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="Image/Logo.png" height="70px" width="70px"></div>
+        <input type="checkbox" name="" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <a href="BS_homepage"><li>Home</li></a>
+            <a href="BS_about"><li>About</li></a>
+            <!-- <a href="#"><li>Services</li></a> -->
+            <a href="BS_contact"><li>Contacts</li></a>
+            <a href="BS_feedback"><li>FeedBack</li></a>
+        </ul>
+    </nav>
+ 
+              <% var count=10001; %>     
+ <%   newItems.forEach(User2 => { %> 
+        
+  
+    <div class="container2" style="height: 500px;">
+        <div class="book1" >
+            <div class="book2">
+                <h1 id="head1"><%= User2.Bname %></h1>
+                 <p id="head2"> <%= User2.Bedition %>      |      <%= User2.Bauthor %>       |     <%= User2.Tdate %></p>
+                 <h3 id="head03">Book_Space_id - <%= count++ %></h3>
+                 <h1 id="head3">Provided By</h1>
+                 <p id="head2"> <%= User2.username %> | <%= User2.phno %> |  <%= User2.mail %></p>
+                 <a href="BS_contact" class="button">Contact Us</a><br>
+            </div>
+        </div>
+    </div>
+    <% })  %>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3 id="head" class="head2">Our Objetive</h3>
+                    <p>Book_Space is a organization that provide books to some needy peoples in Free of Cost. The main idea of this organization is to help the peoples near about ourself.In this organization two platforms are available one for DONATE BOOK and another one for GET BOOK. </p>
+                    
+                </div>
+                <div class="footer-col-2">
+                   <img src="Image/Logo2.png">
+                   <p>Thanks For Visiting.</p>
+               </div>
+               <div class="footer-col-3">
+                   <h3 class="head2">Useful Links</h3>
+                   <a href="BS_homepage">Home</a><br>
+                   <a href="BS_about">About</a><br>
+                   <a href="BS_contact">Contacts</a><br>
+                   <a href="BS_feedback">FeedBack</a><br>
+               </div>
+               <div class="footer-col-4">
+                   <h3 class="head2">Follow Us</h3>
+                   <a href="#">Facebook</a><br>
+                   <a href="#">Twitter</a><br>
+                   <a href="#">Instagram</a><br>
+                   <a href="#">Youtube</a><br>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

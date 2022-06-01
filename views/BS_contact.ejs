@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book_Space | Feedback</title>
+    <link rel="stylesheet" href="css/BS_Bookdonate.css">
+    <link rel="stylesheet" href="css/BS_about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="Nav.css"> -->
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .bgContact{
+            background-color: aquamarine;
+        }
+        .bgContact .hed{
+            text-align: center;
+            color: black;
+            padding: 10px;
+        }
+        .column {
+  float: left;
+  width: 35%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: orangered;
+}
+.card p{
+    color: white;
+}
+.card .heda{
+    color: white;
+    font-weight: 500;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="Image/Logo.png" height="70px" width="70px"></div>
+        <input type="checkbox" name="" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <a href="BS_homepage"><li>Home</li></a>
+            <a href="BS_about"><li>About</li></a>
+            <!-- <a href="#"><li>Services</li></a> -->
+            <a href="#"><li>Contacts</li></a>
+            <a href="BS_feedback"><li>FeedBack</li></a>
+        </ul>
+    </nav>
+    
+    <div class="bgContact">
+        <br>
+        <h2 class="hed">Need Help? Contact Us</h2><br>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+              <p><h3 class="heda">Name: Anshul Kumar <br>
+              Email Id : 20115@iiitu.ac.in <br>
+              Ph no : +91 9456862963</h3></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <p><h3 class="heda">Name: Rishabh Kumar <br>
+                Email Id : 20148@iiitu.ac.in <br>
+                Ph no : +91 7970711136</h3></p>
+          </div>
+        </div>
+        
+      </div>
+      <br>
+      <div class="container2">
+        <form action="/BS_contact" name="Bookcontact" method="POST">
+        <h1>Please fill details</h1>
+        <hr>
+        <h2>Enter Email ID</h2>
+        <input type="text" name="cname01" placeholder="abc@gmail.com" required>
+        <h2>Enter Book_Space_ID</h2>
+        <input type="text" name="eid" placeholder="10001" required><br><br><br>
+        <input type="submit" value="Submit"><br><br>
+        <input type="submit" value="Reset"><br><br>
+        <p><b>Note :</b>  If owner is too far then he will courrier the books at your place but courrier charges paid by those who want book.</p>
+    </form>
+    </div>
+    </div> 
+      
+    <div class="footer" id="scroll">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3 id="head" class="head2">Our Objetive</h3>
+                    <p>Book_Space is a organization that provide books to some needy peoples in Free of Cost. The main idea of this organization is to help the peoples near about ourself.In this organization two platforms are available one for DONATE BOOK and another one for GET BOOK. </p>
+                    
+                </div>
+                <div class="footer-col-2">
+                   <img src="Image/Logo2.png">
+                   <p>Thanks For Visiting.</p>
+               </div>
+               <div class="footer-col-3">
+                   <h3 class="head2">Useful Links</h3>
+                   <a href="BS_homepage">Home</a><br>
+                   <a href="BS_about">About</a><br>
+                   <a href="BS_contact">Contacts</a><br>
+                   <a href="BS_feedback">FeedBack</a><br>
+               </div>
+               <div class="footer-col-4">
+                   <h3 class="head2">Follow Us</h3>
+                   <a href="#">Facebook</a><br>
+                   <a href="#">Twitter</a><br>
+                   <a href="#">Instagram</a><br>
+                   <a href="#">Youtube</a><br>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
