@@ -393,6 +393,11 @@ app.post("/login", function(req,res){
 app.get("/BS_contact", function(req, res){
     res.render("BS_contact");
 })
-app.listen(process.env.PORT || 5000 ,function(){
+
+let port = process.env.PORT;
+if(port==NULL || port==""){
+    port=3000
+}
+app.listen(port ,function(){
      console.log("Server Stared on port 5000")
 })
