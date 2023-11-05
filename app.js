@@ -395,8 +395,8 @@ app.get("/BS_contact", function(req, res){
 
 let port = process.env.PORT;
 if(port==null || port==""){
-    port=3000
+    port=8000
 }
 app.listen(port ,function(){
-     console.log("Server Stared on port 5000")
+     console.log("Server Stared on port 8000")
 })
