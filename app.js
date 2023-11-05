@@ -34,8 +34,7 @@ app.use(passport.session())
 // mongoose.connect("mongodb+srv://anshulkumar2311:anshul2311@cluster0.2srpn.mongodb.net",{useNewUrlParser:true});
 
 // mongoose.connect("mongodb+srv://anshul2311:anshul2311@cluster0.zcnu6.mongodb.net", {useNewUrlParser:true})
-mongoose.connect("mongodb+srv://anshul1423:anshul1423@cluster0.93ztx.mongodb.net",{useNewUrlParser:true});
-
+mongoose.connect("mongodb+srv://anshul2311:anshul2311@cluster0.zcnu6.mongodb.net/",{useNewUrlParser:true});
 const userSchema = new mongoose.Schema({
      email: String,
      password: String,
